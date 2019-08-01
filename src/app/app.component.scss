@@ -1,0 +1,208 @@
+.stepwizard-step {
+    text-align: center;
+}
+
+.stepwizard-step > a {
+    border-radius: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.stepwizard-step {
+    position: relative;
+}
+
+    .stepwizard-step:before,
+    .stepwizard-step:after {
+        width: 50%;
+        height: auto;
+        content: '';
+        border: 2px solid green;
+        position: absolute;
+        top: 16px;
+        z-index: 0;
+    }
+
+    .stepwizard-step:before {
+        left: 0;
+    }
+
+    .stepwizard-step:after {
+        right: 0;
+    }
+
+.stepwizard-row .stepwizard-step:first-child:before {
+    display: none;
+}
+
+.stepwizard-row .stepwizard-step:last-child:after {
+    display: none;
+}
+
+.gly-spin {
+    -webkit-animation: spin 2s infinite linear;
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+    font-size: 60px;
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(odeg);
+    }
+
+    100% {
+        -moz-transform: rotate(359deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@-o-keyframes spin {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+
+    100% {
+        -o-transform: rotate(359deg);
+    }
+}
+
+.inputFileCont {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 18% !important;
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+    background-color: transparent;
+    color: transparent;
+    width: 100px;
+    height: 33px;
+    cursor: pointer;
+}
+
+
+.upMainDiv {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+}
+
+    .upMainDiv .inSPan {
+        width: 70%;
+        margin-right: 15px;
+    }
+
+.btn.UploadBT {
+    width: 18%;
+    margin-right: 15px;
+}
+
+.upMainDiv .btn-danger {
+    width: 17%;
+}
+
+/*-----*/
+.btn-success.nextBtn {
+    width: 100px;
+}
+
+
+.detectionView {
+    padding: 20px 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+    .detectionView > .row > div {
+        display: inline-block;
+        height: 60px;
+        padding: 3px 3px;
+        float: left;
+    }
+
+    .detectionView .coll-1 {
+        width: 11%;
+    }
+
+    .detectionView .coll-2 {
+        width: 10%;
+    }
+
+    .detectionView .coll-3 {
+        width: 58%;
+        padding-top: 9px !important;
+        padding-bottom: 5px !important;
+    }
+
+    .detectionView .coll-4 {
+        width: 6%;
+    }
+
+    .detectionView .coll-5 {
+        width: 15%;
+    }
+
+    .detectionView > .row > div > img {
+        height: 55px;
+    }
+
+.btn.btn-primary.DownLoadbtn span {
+    display: block;
+}
+
+.btn.btn-primary.DownLoadbtn {
+    height: 55px;
+    background: #3985a8;
+    background: -moz-linear-gradient(top, #3985a8 1%, #49aad7 5%, #54cef5 100%);
+    background: -webkit-linear-gradient(top, #3985a8 1%,#49aad7 5%,#54cef5 100%);
+    background: linear-gradient(to bottom, #3985a8 1%,#49aad7 5%,#54cef5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3985a8', endColorstr='#54cef5',GradientType=0 );
+}
+
+.btnDownload {
+    height: 25px;
+    border: 0px !important;
+    width: 34px;
+}
+
+    .btnDownload:nth-child(2) {
+        margin-top: 4px;
+    }
+
+.detectionView > .row > div.coll-4 > button {
+    display: none;
+}
+
+.detectionView > .row:hover {
+    background-color: #efeded;
+}
+
+    .detectionView > .row:hover div.coll-4 > button {
+        display: block;
+    }
+
+.btn.btn-primary.btn22.btnDownload {
+    background: #4ebbe5;
+}
+
+.detectionView > .row {
+    border-bottom: 2px solid #4db6e1;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.detectionView .coll-3 > span {
+    display: block;
+}
